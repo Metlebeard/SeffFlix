@@ -1,0 +1,113 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.gameBoard {
+    background-color: black;
+    width: 540px;
+    height: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+div.collider {
+    background-color: none;
+    width: 540px;
+    height: 540px;
+}
+
+div.gameTile {
+    background-color: whitesmoke;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.snake {
+    background-color: purple;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.food {
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+button.select {
+    background-color: lightgrey;
+    color: lightgrey;
+    width: 27px;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    position: initial;
+}
+
+div.blank {
+    background-color: none;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+div.timer {
+    width: 100px;
+    margin: 0px;
+    position: absolute;
+}
+
+div.scoreCounter {
+    width: 100px;
+    margin-left: 440px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button.begin {
+    position: absolute;
+    width: 100px;
+    margin-left: 200px;
+    background-color: lightgrey;
+}
+
+div.center {
+    width: 69%;
+    margin-left: auto;
+}
+
+h1.title {
+    text-align: center;
+}

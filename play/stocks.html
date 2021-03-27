@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SeffFlix - Stocks</title>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">   
+        <link rel="stylesheet" type="text/css" href="../css/gamepage.css">
+        <link rel="stylesheet" href="css/stocks.css">
+    </head>
+    <body>
+        <img class="center" src="../src/SeffFlix.png" width="250">
+        <a id="hide" href="../home.html"><b>return</b></a>
+        <div id="game-area" class="game-area" style="background-color: #173F5F;">
+
+            <div class="tabs">
+                <button class="tab" onclick="setStockTab()">Stock Market</button>
+                <button class="tab" onclick="setBankTab()">Bank</button>
+                <button class="tab" onclick="setBusinessTab()">Business</button>
+            </div>
+
+            <div id="mainScreen" class="mainScreen">
+                <div id="stockTab" class="stockTab">
+                    <h1 style="color: lightblue;">Stock Market</h1>
+                    <div class="businesses" id="businesses">
+                        <button class="business" onclick="business(-1)">ALL</button>
+                        <button class="business" id="0" onclick="business(0)">SEFFCO</button>
+                        <button class="business" id="1" onclick="business(1)">DTVOGS</button>
+                        <button class="business" id="2" onclick="business(2)">JVNPLS</button>
+                    </div>
+                    <canvas class="graph" id="graph" style="background-color: #20639B;" width="450" height="450"></canvas>
+                    <div class="info" id="info">
+                        <h2 id="companyName">Name: UNSELECTED</h2>
+                        <p id="companyValue">Current Value: N/A</p>
+                        <p id="companyShares">Shares Left: N/A</p>
+                        <p id="companyDividends">Dividends: N/A</p>
+                        <br>
+                        <h2>You</h2>
+                        <p id="balance">Money: $200</p>
+                        <p>Shares Owned:</p>
+
+                    </div>
+                </div>
+                <div id="bankTab" class="bankTab">
+                    <button id="bankOptionOne" class="bankOptionSelected" onclick="selectBank(0)"><b>Bank of Sefftopia</b><br>No interest<br>Free Membership</button>
+                    <button id="bankOptionTwo" class="bankOption" onclick="selectBank(1)"><b>SEFF Bank</b><br>5% interest<br>$5,000 Membership</button>
+                    <button id="bankOptionThree" class="bankOption" onclick="selectBank(2)"><b>The Bank of Banks</b><br>10% interest<br>$10,000 Membership</button>
+                    <br>
+                    <br>
+                    <h3 class="bankInfo">On Hand</h3>
+                    <p class="bankInfo" id="onHandMoney">$200</p>
+                    <h3 class="bankInfo">In Bank</h3>
+                    <p class="bankInfo"><button onclick="deposit()">Deposit</button>  <button onclick="withdraw()">Withdraw</button></p>
+                    <p class="bankInfo" id="inBankMoney">$0</p>
+                </div>
+                <div id="businessTab" class="businessTab">
+                    <button class="createBusiness" onclick="createBusiness()">Create Business - $10,000</button>
+                </div>
+            </div>
+            <button class="nextDay" onclick="nextDay()">Next Day</button>
+            <button class="nextDay" onclick="toggleAuto()">Auto Next Day</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script src="js/stocks.js"></script>
+    </body>
+</html>

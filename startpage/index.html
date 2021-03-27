@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SeffWeb</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <button onclick="setWallpaper()">change</button>
+    <script src="js/script.js"></script>
+    <script src="js/searchbar.js"></script>
+    <body>
+        <h1 class="date" id="dateShort"></h1>
+        <p class="date" id="date"></p>
+        <div class="searchContainer">
+            <form action="https://google.com/search" target="_blank" type="GET">
+                <input class="searchBar" type="search" id="gsearch" name="q" placeholder="Search Google...">
+                <button class="search" id="search" type="submit" value="Go">Search</button>
+            </form>
+        </div>
+        <div class="shortcutsTitle"><h1 class="title">Shortcuts</h1></div>
+        <div class="remindersTitle"><button onclick="addReminder()" class="addReminder">+</button><h1 class="title">Reminders</h1></div>
+        <div class="shortcutsContainer">
+            <br>
+            <p class="category">Social</p>
+            <form action="https://discord.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/discord.jpg">Discord</button>
+            </form>
+            <form action="https://reddit.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/reddit.jpg">Reddit</button>
+            </form>
+            <form action="https://hangouts.google.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/hangouts.jpg">Hangouts</button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <p class="category">Entertainment</p>
+            <form action="https://youtube.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/youtube.jpg">Youtube</button>
+            </form>
+            <form action="https://twitch.tv/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/twitch.jpg">Twitch</button>
+            </form>
+            <form action="https://netflix.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/netflix.jpg">Netflix</button>
+            </form>
+            <form action="https://primevideo.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/primeVideo.jpg">Prime Video</button>
+            </form>
+            <form action="https://disneyplus.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/disneyPlus.jpg">Disney+</button>
+            </form>
+            <form action="https://binge.com.au/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/binge.jpg">Binge</button>
+            </form>
+            <form action="https://stan.com.au/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/stan.jpg"><br>Stan</button>
+            </form>
+            <form action="https://www.hayu.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/hayu.jpg"><br>Hayu</button>
+            </form>
+            <form action="http://seffflix.ga/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/seffflix.jpg">SeffFlix</button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="category">Google Apps</p>
+            <form action="https://drive.google.com/drive/my-drive">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/drive.jpg">Google Drive</button>
+            </form>
+            <form action="https://mail.google.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/gmail.jpg">Gmail</button>
+            </form>
+            <form action="https://calendar.google.com/calendar/u/0/r">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/calendar.jpg">Google Calendar</button>
+            </form>
+            <form action="https://docs.google.com/document/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/docs.jpg">Google Docs</button>
+            </form>
+            <form action="https://docs.google.com/presentation/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/slides.jpg">Google Slides</button>
+            </form>
+            <form action="https://docs.google.com/spreadsheets/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/sheets.jpg">Google Sheets</button>
+            </form>
+            <form action="https://classroom.google.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/classroom.jpg">Google Classroom</button>
+            </form>
+            <form action="https://docs.google.com/drawings/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/drawings.jpg">Google Drawings</button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <p class="category">Education</p>
+            <form action="https://new.edmodo.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/edmodo.jpg">Edmodo</button>
+            </form>
+            <form action="https://schoology.com/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/schoology.jpg">Schoology</button>
+            </form>
+            <form action="https://stjamesqld.tass.net.au/studentcafe/index.cfm">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/studentCafe.jpg">Student Cafe</button>
+            </form>
+            <form action="https://sites.google.com/a/stjameslc.net/stjames-google-apps-homepage/">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/studentWebsite.jpg">Student Website</button>
+            </form>
+            <form action="https://mathspace.co/au">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/mathspace.jpg">Mathspace</button>
+            </form>
+            <form action="https://login.microsoftonline.com/studentprodqcaa.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_QCAA_prod_production_student_signin&response_type=code&client_id=c3c27a78-dcb1-4213-9ae6-79b0ecabbb7c&scope=openid+offline_access+https%3A%2F%2Fstudentprodqcaa.onmicrosoft.com%2Fportal-web-api%2Faccess+email&redirect_uri=https%3A%2F%2Fwww.qcaa.qld.edu.au%2Fstudent%2Fhome%2Fopenid_connect_login&nonce=15aa19f96e490&state=22abeab8dbde2">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/QCAA.jpg">QCAA</button>
+            </form>
+            <form action="https://service.1300acepro.com/onguard/auth/sso/login?schoolKey=stjameslc%2Eqld&next=http%3A%2F%2Fwww%2E1300acepro%2Ecom%2FOnGuardACEPro2014%2Fcontent%2FdoLogin%2Easp&errorCode=0">
+                <button class="shortcut" type="submit"><img class="shortcut" src="src/onguard.jpg">OnGuard</button>
+            </form>
+            
+        </div>
+        <div id="remindersContainer" class="remindersContainer">
+        </div>
+    </body>
+</html>

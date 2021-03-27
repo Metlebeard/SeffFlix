@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sefflix - Impact</title>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/videopage.css">
+    
+</head>
+<body>
+    <img class="center" src="../src/SeffFlix.png" width="250">
+    <a id="hide" href="../home.html"><b>return</b></a>
+    <div class="vid-area">
+        
+        <form id="one" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/GNFX6FKNUE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Impact</h3>
+            <p id=text>Tragedy soon awaits Cera and Spiny, two dinosaurs living in a world that will soon be struck by a large meteor that will wipe the dinosaurs out. Will they live to see another day after the impact? Find out now in Impact, a short film by Javion Spargo.</p>
+        </form>
+        
+        <form id="two" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/jf1AutAZRMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Impact 2</h3>
+            <p id=text>Brace for the next chapter of the Impact story! See Spiny and Cera on Planet Xion, the home of a species of highly intelligent alien life known as the Xia’s. After the asteroid struck the Earth, the two were taken to Xion. Will they ever make it back home? Is everyone on Earth ok? What will await their return? Find out NOW in Impact 2! By Javion Spargo</p>
+        </form>
+        
+        <form id="three" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/XY1wBFAFnBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Impact 3</h3>
+            <p id=smalltext>This just in:
+Spiny and Cera return in the third and final instalment of the Impact trilogy. The Xia’s are also back, and angrier than ever. Will the humans defeat the Xia’s using their technological advancements following the discovery of alien technology? Or will the Xia’s completely destroy the Earth and leave human civilisation as we know it to collapse and become out of control? Find out in the exciting Impact finale.</p>
+        </form>
+
+        <form id="four" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/kZJzs_zlDEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Impact 4</h3>
+            <p id=smalltext>IMPACT 4 TRAILER: OUT NOW!!! || Coming to SeffFlix 20/12/2020</p>
+        </form>
+        
+    </div>
+    <div class="episode-selector">
+        <h6 id="text">Movies</h6>
+        <button class="ep-btn" onclick="ep1()">1</button>
+        <button class="ep-btn" onclick="ep2()">2</button>
+        <button class="ep-btn" onclick="ep3()">3</button>
+        <button class="ep-btn" onclick="ep4()">4</button>
+    </div>
+    <script>
+        var a = document.getElementById("one");
+        var b = document.getElementById("two");
+        var c = document.getElementById("three");
+        var d = document.getElementById("four");
+        
+        function ep1() {
+            a.style.left = "0px";
+            b.style.left = "450px";
+            c.style.left = "450px";
+            d.style.left = "450px";
+        }
+        
+        function ep2() {
+            a.style.left = "450px";
+            b.style.left = "0px";
+            c.style.left = "450px";
+            d.style.left = "450px";
+        }
+        
+        function ep3() {
+            a.style.left = "450px";
+            b.style.left = "450px";
+            c.style.left = "0px";
+            d.style.left = "450px";
+        }
+
+        function ep4() {
+            a.style.left = "450px";
+            b.style.left = "450px";
+            c.style.left = "450px";
+            d.style.left = "0px";
+        }
+
+        ep1();
+    </script>
+</body>
+</html>

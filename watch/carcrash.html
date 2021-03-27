@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sefflix - Car Crash</title>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/videopage.css">
+</head>
+<body>
+    <img class="center" src="../src/SeffFlix.png" width="250">
+    <a id="hide" href="../home.html"><b>return</b></a>
+    <div class="vid-area">
+        
+        <form id="one" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/xP_vx2lKmqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Car Crash [s1e1]</h3>
+            <p id=text>Snooble goob</p>
+        </form>
+        
+        <form id="two" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/M1hXfFMEYCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Car Crash [s1e2]</h3>
+            <p id=text>Snuble bub</p>
+        </form>
+        
+        <form id="three" class="ep-info">
+            
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/rIWcWSbHBPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        <h3 id="text">Car Crash [s1e3]</h3>
+            <p>Glubby Schkloob</p>
+        </form>
+        
+    </div>
+    <div class="episode-selector">
+        <h6 id="text">Season 1</h6>
+        <button class="ep-btn" onclick="ep1()">1</button>
+        <button class="ep-btn" onclick="ep2()">2</button>
+        <button class="ep-btn" onclick="ep3()">3</button>
+    </div>
+    <script>
+        var a = document.getElementById("one");
+        var b = document.getElementById("two");
+        var c = document.getElementById("three");
+        
+        function ep1() {
+            a.style.left = "0px";
+            b.style.left = "450px";
+            c.style.left = "450px";
+        }
+        
+        function ep2() {
+            a.style.left = "450px";
+            b.style.left = "0px";
+            c.style.left = "450px";
+        }
+        
+        function ep3() {
+            a.style.left = "450px";
+            b.style.left = "450px";
+            c.style.left = "0px";
+        }
+    </script>
+</body>
+</html>

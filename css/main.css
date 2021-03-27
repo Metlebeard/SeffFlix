@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+#logo {
+    color: rgb(107, 1,125);
+    background-color: black;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+#text {
+    color: white;
+    font-family: sans-serif;
+}
+
+#title {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#smalltext {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+body {
+    background-color: black;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(20, 20, 20);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 9px 9px rgb(10, 10, 10);
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background-color: rgb(20, 0, 38);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: rgb(20, 0, 38);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+video {
+    left: 8%;
+    position: relative;
+}
+
+#hide {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    left: 10%;
+}
+
+.menu-bar {
+    width: 80%;
+    height: 45px;
+    position: relative;
+    border-radius: 50px;
+    margin: 6% auto;
+    background: rgb(20, 20, 20);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.menu-btn {
+    height: 45px;
+    width: 32.79%;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: gray;
+}
+
+.entertain-list {
+    width: 80%;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(20, 20, 20);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.flix {
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    margin-right: 0px;
+    background-color: white;
+    border: none;
+    overflow: hidden;
+}
+
+.flix:hover {
+    cursor: pointer;
+    border: 2px
+}
+
+.buttonlink {
+    color: black;
+    text-decoration: none;
+}
+
+.error {
+    color: white;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+
+.area {
+    width: 80%;
+    height: 450px;
+    position: relative;
+    margin: 6% auto 0 auto;
+    background: rgb(20, 20, 20);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.Watch {
+    left: 0px;
+}
+
+.Play {
+    left: 1300px;
+}
+
+.Listen {
+    left: 1300px;
+}
+
+.homeType {
+    position: absolute;
+    width: 80%;
+}
+
+p.text {
+    color: white;
+    font-family: sans-serif;
+}
+
+img.studio {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SeffFlix</title>    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <img class="center" src="src/SeffFlix.png" width="250">
+    <div class="menu-bar">
+        <button class="menu-btn" onclick="watch()"><img src="src/WatchButton.png" width="100px"></button>
+        <button class="menu-btn" onclick="play()"><img src="src/PlayButton.png" width="100px"></button>
+        <button class="menu-btn" onclick="listen()"><img src="src/ListenButton.png" width="100px"></button>
+    </div>
+
+    <div class="area">
+        <div id="Watch" class="homeType">
+            <div class="entertain-list">
+                <p id="title">Shows</p>
+                <button class="flix" onclick="window.location.href='watch/carcrash.html'"><img src="src/CarCrash.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <p id="title">Movies</p>
+                <button class="flix" onclick="window.location.href='watch/impact.html'"><img src="src/Impact.png" width="100px"></button>
+                <button class="flix" onclick="window.location.href='watch/DOTF.html'"><img src="src/DOTF.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+            </div>
+        </div>
+
+        <div id="Play" class="homeType">
+            <div class="entertain-list">
+                <p id="title">Games</p>
+                <button class="flix" onclick="window.location.href='play/tetris.html'"><img src="src/Tetris.png" width="100px"></button>
+                <button class="flix" onclick="window.location.href='play/minesweeper.html'"><img src="src/Minesweeper.png" width="100px"></button>
+                <button class="flix" onclick="window.location.href='play/snake.html'"><img src="src/Snake.png" width="100px"></button>
+                <button class="flix" onclick="window.location.href='play/stocks.html'"><img src="src/Stocks.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+            </div>
+        </div>
+        
+        <div id="Listen" class="homeType">
+            <div class="entertain-list">
+                <p id="title">Music</p>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+                <button class="flix"><img src="src/Empty.png" width="100px"></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="text">SeffFlix is brought to you by: </p>
+    <img class="studio" src="src/SeffyStudios.png">
+    <p class="text">©2021 Seffy Studios. All Rights Reserved.</p>
+    <br>
+    <br>
+    
+    <script>
+
+        var watchList = document.getElementById('Watch');
+        var playList = document.getElementById('Play');
+        var listenList = document.getElementById('Listen');
+
+        function watch() {
+            watchList.style.left = "0px";
+            playList.style.left = "1300px";
+            listenList.style.left = "1300px";
+        }
+
+        function play() {
+            watchList.style.left = "1300px";
+            playList.style.left = "0px";
+            listenList.style.left = "1300px";
+        }
+
+        function listen() {
+            watchList.style.left = "1300px";
+            playList.style.left = "1300px";
+            listenList.style.left = "0px";
+        }
+
+        function soon()
+        {
+            alert("Coming Soon!")
+        }
+        watch();
+    </script>
+</body>
+</html>

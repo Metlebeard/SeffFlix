@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SeffFlix - Snake</title>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">   
+        <link rel="stylesheet" type="text/css" href="../css/gamepage.css">
+        <link id="styleSheet" rel="stylesheet" type="text/css" href="css/snake.css">
+    </head>
+    <script src='js/snake.js'></script>
+    <body>
+        <img class="center" src="../src/SeffFlix.png" width="250">
+        <a id="hide" href="../home.html"><b>return</b></a>
+        <div id="game-area" class="game-area">
+            <h1 class="title"> Seffs Snake</h1>
+            <input placeholder="Board Size" id="sizeInput" type="number">
+            <br>
+            <button class="begin" onclick="generateBoard()">BEGIN</button>
+            <div id="timer" class="timer">TIME: 0:0:0</div>
+            <div id="scoreCounter" class="scoreCounter">SCORE: 0</div>
+            <div class="gameBoard" id="board"></div>
+            <div class="collider" id="collider"></div>
+        </div>
+    </body>
+</html>

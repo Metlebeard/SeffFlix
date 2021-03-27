@@ -1,0 +1,52 @@
+.episode-selector {
+    width: 30%;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    background: transparent;
+    padding: 5px;
+}
+
+.ep-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.ep-btn:hover {
+    background-color: gray;
+}
+
+.ep-info {
+    position: absolute;
+    width: 380px;
+    transition: .5s;
+}
+
+#one {
+    left: 0px;
+}
+
+#two {
+    left: 450px;
+}
+
+#three {
+    left:450px;
+}
+
+.vid-area {
+    width: 380px;
+    height: 390px;
+    position: relative;
+    margin: 6% auto 0 auto;
+    background: rgb(20, 20, 20);
+    padding: 5px;
+    overflow: hidden;
+}
+
+iframe {
+    left: 9%;
+    position: relative;
+}
